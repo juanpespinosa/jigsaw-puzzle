@@ -1,0 +1,145 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+
+.col-40 {
+  background: #FFF8;
+  padding: 30px;
+  width: 200px;
+  height: 600px;
+  color: #0057;
+  float: left;
+}
+
+.col-60 {
+  background: #E84A5F;
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.piezas img {
+  width: 198px;
+  height: 198px;
+  float: left;
+  border: 1px solid #2862ab;
+}
+
+div .vacia {
+  width: 198px;
+  height: 198px;
+  float: left;
+  border: 1px solid black;
+}
+
+#objetivo img {
+  width: 70%;
+}
+
+#flecha {
+  font-size: 55px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+h3 {
+  font-size: 12px;
+  font-style: italic;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#dialogoverlay {
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  background: #ffeb3f;
+  border-color: orange;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5%;
+  width: 550px;
+  z-index: 10;
+  margin: 8px;
+  font-family: Arial;
+}
+
+#dialogboxheader {
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  padding: 6px;
+  color: #0057;
+}
+
+#dialogboxbody {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 200;
+  color: #f72d2d;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+#dialogboxfooter {
+  padding: 10px;
+  text-align: right;
+}
